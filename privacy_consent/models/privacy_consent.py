@@ -154,7 +154,7 @@ class PrivacyConsent(models.Model):
             "context": {
                 "default_composition_mode": "comment",
                 "default_model": self._name,
-                "default_res_id": self.id,
+                "default_res_ids": self.ids,
                 "default_template_id": self.activity_id.consent_template_id.id,
                 "default_use_template": True,
                 "tpl_force_default_to": True,
